@@ -583,17 +583,23 @@ html {
   border-radius: 0;
   box-shadow: none;
   transform-origin: 50% 50%;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.3s ease;
 }
 
-/* only where there is a mouse: the image magnifies while the pointer is over it */
+/* only where there is a mouse: the image grows a little while the pointer is over it */
 @media (hover: hover) and (pointer: fine) {
   .md-typeset .eduwe-zoom {
-    cursor: zoom-in;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .md-typeset .eduwe-zoom:hover {
+    border-color: rgba(0, 176, 240, 0.55);
+    box-shadow: 0 14px 34px rgba(0, 120, 170, 0.26);
   }
 
   .md-typeset .eduwe-zoom:hover img {
-    transform: scale(2);
+    transform: scale(1.05);
   }
 }
 

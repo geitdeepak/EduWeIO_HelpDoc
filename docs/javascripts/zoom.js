@@ -1,5 +1,5 @@
-/* Hover zoom for screenshots.
-   Each content image is wrapped in a link. On a device with a mouse, the image magnifies under the pointer
+/* Gentle hover zoom for screenshots.
+   Each content image is wrapped in a link. On a device with a mouse, the image grows slightly while the pointer is over it
    (the styles are in stylesheets/extra.css). Clicking, or tapping on a phone, opens the full image in a new tab. */
 (function () {
   function setup() {
@@ -18,18 +18,6 @@
 
       img.parentNode.insertBefore(wrap, img);
       wrap.appendChild(img);
-
-      // magnify around the pointer, so the part under the mouse is the part you see larger
-      wrap.addEventListener("mousemove", function (event) {
-        var box = wrap.getBoundingClientRect();
-        var x = ((event.clientX - box.left) / box.width) * 100;
-        var y = ((event.clientY - box.top) / box.height) * 100;
-        img.style.transformOrigin = x + "% " + y + "%";
-      });
-
-      wrap.addEventListener("mouseleave", function () {
-        img.style.transformOrigin = "50% 50%";
-      });
     });
   }
 

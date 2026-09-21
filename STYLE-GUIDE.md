@@ -126,3 +126,26 @@ Save the file with the exact name, then delete the first line and the last line 
 
 The path is relative to the page: pages in `docs/learner/` use `../assets/...`; `docs/index.md` uses `assets/...`.
 Always write real alt text, and keep the caption to one short line.
+
+## Theme Colour
+
+The EduWe brand colour is RGB 0 / 176 / 240, which is `#00B0F0`. It is set once, in `docs/stylesheets/extra.css`, and `mkdocs.yml` uses it through `primary: custom` and `accent: custom`. Change the colour there only.
+
+White text on `#00B0F0` is hard to read (about 2.5 to 1), so the header uses dark text on the brand blue, and links in the light theme use a deeper shade of the same blue.
+
+## Logo
+
+The EduWe logo is in `docs/assets/logo/`: `eduwe-logo.png` (transparent, brand blue) and `favicon.png` (the E on the EduWe dark background). Never recolour, stretch or add effects to the logo. The header seats it on a dark tab so the blue stays visible on the blue header. Prefer replacing these files with the official SVG or a high-resolution transparent PNG when you have one, keeping the same file names.
+
+## Home Page Components
+
+The help home page (`docs/index.md`) is built from a few reusable pieces. Their styles are in `docs/stylesheets/extra.css`.
+
+- **Hero:** `<div class="eduwe-hero" markdown>` holds the eyebrow tag, the heading, one sentence, the search bar (a label that opens the site search) and two buttons.
+- **How It Works:** an ordered list inside `<div class="eduwe-steps" markdown>`. It shows four steps in a row on desktop, two on a tablet and one on a phone.
+- **Cards:** `<div class="grid cards eduwe-cols-4" markdown>`. Use `eduwe-cols-4`, `eduwe-cols-3` or `eduwe-cols-2` so the last row is never left with a single card. Put `{ .eduwe-stretch }` on the main link so the whole card is clickable. Add `eduwe-static` for cards that are not links.
+- **Quick links:** `<div class="eduwe-chips" markdown>` with links marked `{ .md-button }`.
+- **Coming soon:** `<span class="eduwe-soon">Coming Soon</span>` beside a card title.
+- **Help band:** `<div class="eduwe-band" markdown>` at the bottom.
+
+Only link to pages that have real content. Cards for Instructors and Administrators stay unlinked until those guides are written.

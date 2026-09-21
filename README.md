@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/assets/logo/eduwe-logo.png" alt="EduWe" width="220"></p>
+
 # eduwe-docs
 
 Docs-as-code for EduWe. One Markdown source produces:
@@ -21,7 +23,7 @@ scripts/
 mkdocs.yml  package.json  requirements.txt
 ```
 
-`requirements.txt` and `.gitignore` are the only files added to the layout in the spec.
+`requirements.txt`, `.gitignore` and `docs/stylesheets/extra.css` (the EduWe theme colour) are the only files added to the layout in the spec.
 
 ## Setup
 

@@ -1,0 +1,604 @@
+/* EduWe theme colour: RGB 0 / 176 / 240 = #00B0F0.
+   mkdocs.yml sets palette primary and accent to "custom", so these variables apply. */
+
+:root {
+  /* brand blue, used for the header, tabs, buttons and accents */
+  --md-primary-fg-color: #00b0f0;
+  --md-primary-fg-color--light: #4dc9f6;
+  --md-primary-fg-color--dark: #0086b8;
+
+  /* text and icons on the brand blue: dark, because white on #00B0F0 is only about 2.5:1 */
+  --md-primary-bg-color: #04141d;
+  --md-primary-bg-color--light: #04141db3;
+
+  --md-accent-fg-color: #00b0f0;
+  --md-accent-fg-color--transparent: #00b0f01a;
+  --md-accent-bg-color: #04141d;
+  --md-accent-bg-color--light: #04141db3;
+
+  --eduwe-radius: 1.1rem;
+}
+
+/* Light theme: a deeper shade of the same blue for links and hover, so they stay readable on white */
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #006f99;
+  --md-accent-fg-color: #0086b8;
+  --md-accent-fg-color--transparent: #0086b81a;
+
+  --eduwe-card-bg: #ffffff;
+  --eduwe-card-border: rgba(15, 40, 60, 0.1);
+  --eduwe-card-shadow: 0 1px 2px rgba(15, 40, 60, 0.05), 0 10px 30px rgba(15, 40, 60, 0.07);
+  --eduwe-muted: #55636e;
+  --eduwe-tile: rgba(0, 176, 240, 0.13);
+}
+
+/* Dark theme: soft glass cards */
+[data-md-color-scheme="slate"] {
+  --eduwe-card-bg: rgba(255, 255, 255, 0.045);
+  --eduwe-card-border: rgba(255, 255, 255, 0.1);
+  --eduwe-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  --eduwe-muted: #a9b4be;
+  --eduwe-tile: rgba(0, 176, 240, 0.18);
+}
+
+/* Logo: the EduWe logo is brand blue, so on the blue header it sits on a dark rounded tab (the same dark as the EduWe app).
+   The logo colours are never changed. To use a plain header instead, remove this block. */
+.md-header__button.md-logo {
+  margin: 0.3rem 0.5rem 0.3rem 0.2rem;
+  padding: 0.25rem 0.7rem;
+  background-color: #191919;
+  border-radius: 0.5rem;
+}
+
+.md-header__button.md-logo img {
+  height: 1.35rem;
+  width: auto;
+}
+
+/* ===== Modern polish for every page ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.md-header {
+  box-shadow: 0 2px 18px rgba(0, 120, 170, 0.28);
+}
+
+.md-search__form {
+  border-radius: 2rem;
+}
+
+.md-tabs__link {
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-typeset figure img {
+  border-radius: 0.8rem;
+  border: 1px solid var(--eduwe-card-border);
+  box-shadow: var(--eduwe-card-shadow);
+}
+
+.md-typeset figcaption {
+  margin-top: 0.7rem;
+  color: var(--eduwe-muted);
+  font-size: 0.72rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.8rem;
+  box-shadow: var(--eduwe-card-shadow);
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.8rem;
+  overflow: auto;
+  box-shadow: var(--eduwe-card-shadow);
+}
+
+/* ===== Help home page ===== */
+
+/* hero */
+.md-typeset .eduwe-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0.6rem 0 3rem;
+  padding: 4.2rem 3rem 3.4rem;
+  border-radius: 1.6rem;
+  color: #fff;
+  background:
+    radial-gradient(900px 380px at 100% -20%, rgba(0, 176, 240, 0.6), transparent 62%),
+    radial-gradient(600px 300px at -10% 120%, rgba(0, 176, 240, 0.28), transparent 60%),
+    linear-gradient(140deg, #050d15 0%, #0a1f31 55%, #0b3a58 100%);
+  box-shadow: 0 24px 60px rgba(0, 110, 160, 0.28);
+}
+
+.md-typeset .eduwe-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1.2px);
+  background-size: 24px 24px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+  mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+}
+
+.eduwe-eyebrow {
+  display: inline-block;
+  padding: 0.28rem 0.9rem;
+  border: 1px solid rgba(0, 176, 240, 0.45);
+  border-radius: 2rem;
+  background: rgba(0, 176, 240, 0.16);
+  color: #7fdcff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.md-typeset .eduwe-hero h1 {
+  margin: 1rem 0 0.8rem;
+  color: #fff;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.08;
+}
+
+.md-typeset .eduwe-hero p {
+  max-width: 36rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.08rem;
+}
+
+/* search bar in the hero: the label opens the site search */
+.md-typeset .eduwe-hero .eduwe-search {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  max-width: 34rem;
+  margin: 1.7rem 0 1.5rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 3rem;
+  background: rgba(255, 255, 255, 0.96);
+  color: #3b4a56;
+  cursor: text;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .eduwe-hero .eduwe-search:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.36);
+}
+
+.eduwe-search svg {
+  flex: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #0086b8;
+}
+
+.eduwe-search span {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.eduwe-search kbd {
+  padding: 0.1rem 0.55rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 0.4rem;
+  background: #eef3f6;
+  color: #3b4a56;
+  font-size: 0.75rem;
+  box-shadow: none;
+}
+
+.md-typeset .eduwe-hero .md-button {
+  margin: 0.3rem 0.6rem 0 0;
+  padding: 0.6em 1.7em;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.md-typeset .eduwe-hero .md-button:not(.md-button--primary) {
+  border-color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+  color: #fff;
+}
+
+.md-typeset .eduwe-hero .md-button:not(.md-button--primary):hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* how it works: numbered steps joined by a line */
+.md-typeset .eduwe-steps ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 1.4rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: eduwe-step;
+}
+
+.md-typeset .eduwe-steps li {
+  position: relative;
+  margin: 0;
+  padding: 3.5rem 0 0;
+  counter-increment: eduwe-step;
+}
+
+.md-typeset .eduwe-steps li::before {
+  content: counter(eduwe-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #00b0f0;
+  box-shadow: 0 0 0 7px rgba(0, 176, 240, 0.18);
+  color: #04141d;
+  font-weight: 800;
+}
+
+.md-typeset .eduwe-steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  right: -1.1rem;
+  left: 3.7rem;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0, 176, 240, 0.7), rgba(0, 176, 240, 0.05));
+}
+
+/* cards */
+.md-typeset .grid.cards {
+  gap: 1.1rem;
+}
+
+.md-typeset .grid.cards > ul > li {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 1.5rem 1.3rem;
+  border: 1px solid var(--eduwe-card-border);
+  border-radius: var(--eduwe-radius);
+  background: var(--eduwe-card-bg);
+  box-shadow: var(--eduwe-card-shadow);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.md-typeset .grid.cards > ul > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00b0f0, #4dc9f6 60%, transparent);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 176, 240, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 120, 170, 0.24);
+}
+
+.md-typeset .grid.cards.eduwe-static > ul > li:hover {
+  transform: none;
+  border-color: var(--eduwe-card-border);
+  box-shadow: var(--eduwe-card-shadow);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  display: none;
+}
+
+.md-typeset .grid.cards .twemoji.lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-right: 0.7rem;
+  border-radius: 0.85rem;
+  background: var(--eduwe-tile);
+}
+
+.md-typeset .grid.cards .twemoji.lg svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #00b0f0;
+}
+
+[data-md-color-scheme="default"] .md-typeset .grid.cards .twemoji.lg svg {
+  fill: #0086b8;
+}
+
+.md-typeset .grid.cards > ul > li p {
+  margin: 0.7rem 0 0;
+  color: var(--eduwe-muted);
+}
+
+.md-typeset .grid.cards > ul > li p:first-child {
+  margin-top: 0;
+  color: var(--md-default-fg-color);
+  font-size: 1.02rem;
+}
+
+/* the small arrow inside a card link */
+.md-typeset .grid.cards a .twemoji {
+  margin-left: 0.2rem;
+  vertical-align: -0.15em;
+}
+
+.md-typeset .grid.cards a .twemoji svg {
+  width: 1.05em;
+  height: 1.05em;
+  fill: currentcolor;
+}
+
+/* the whole card is clickable: the main link stretches over it, extra links stay on top */
+.md-typeset .grid.cards a.eduwe-stretch {
+  font-weight: 700;
+}
+
+.md-typeset .grid.cards a.eduwe-stretch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.md-typeset .grid.cards li a:not(.eduwe-stretch) {
+  position: relative;
+  z-index: 2;
+}
+
+.md-typeset .grid.cards > ul > li p:has(> a.eduwe-stretch) {
+  margin-top: 1rem;
+}
+
+/* quick-link chips */
+.md-typeset .eduwe-chips .md-button {
+  margin: 0.25rem 0.4rem 0.25rem 0;
+  padding: 0.35em 1.15em;
+  border-color: currentcolor;
+  border-radius: 2rem;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .eduwe-chips .md-button:hover {
+  border-color: #00b0f0;
+  background: #00b0f0;
+  color: var(--md-primary-bg-color);
+}
+
+/* "Coming Soon" pill */
+.eduwe-soon {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.6rem;
+  border-radius: 1rem;
+  background: rgba(0, 176, 240, 0.16);
+  color: var(--md-typeset-a-color);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* help band */
+.md-typeset .eduwe-band {
+  margin: 3rem 0 1rem;
+  padding: 2rem 2.2rem;
+  border: 1px solid rgba(0, 176, 240, 0.45);
+  border-radius: 1.3rem;
+  background: linear-gradient(120deg, rgba(0, 176, 240, 0.16), rgba(0, 176, 240, 0.03));
+}
+
+.md-typeset .eduwe-band h2 {
+  margin-top: 0;
+}
+
+.md-typeset .eduwe-band .md-button {
+  padding: 0.55em 1.7em;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+/* gentle entrance animation */
+@keyframes eduwe-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.md-typeset .eduwe-hero > *,
+.md-typeset .eduwe-steps li,
+.md-typeset .grid.cards > ul > li {
+  animation: eduwe-rise 0.6s ease both;
+}
+
+.md-typeset .eduwe-hero > *:nth-child(2) { animation-delay: 0.06s; }
+.md-typeset .eduwe-hero > *:nth-child(3) { animation-delay: 0.12s; }
+.md-typeset .eduwe-hero > *:nth-child(4) { animation-delay: 0.18s; }
+.md-typeset .eduwe-hero > *:nth-child(5) { animation-delay: 0.24s; }
+.md-typeset .grid.cards > ul > li:nth-child(2) { animation-delay: 0.07s; }
+.md-typeset .grid.cards > ul > li:nth-child(3) { animation-delay: 0.14s; }
+.md-typeset .grid.cards > ul > li:nth-child(4) { animation-delay: 0.21s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .md-typeset .eduwe-hero > *,
+  .md-typeset .eduwe-steps li,
+  .md-typeset .grid.cards > ul > li {
+    animation: none;
+  }
+
+  .md-typeset .grid.cards > ul > li,
+  .eduwe-search {
+    transition: none;
+  }
+}
+
+/* tablets and phones */
+@media (max-width: 60em) {
+  .md-typeset .eduwe-steps ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md-typeset .eduwe-steps li:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 40em) {
+  .md-typeset .eduwe-hero {
+    padding: 2.6rem 1.4rem 2.2rem;
+    border-radius: 1.2rem;
+  }
+
+  .md-typeset .eduwe-steps ol {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .eduwe-band {
+    padding: 1.5rem 1.3rem;
+  }
+}
+
+/* ===== Responsive grids: no orphan cards ===== */
+.md-typeset .grid.cards.eduwe-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.md-typeset .grid.cards.eduwe-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.md-typeset .grid.cards.eduwe-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 72em) {
+  .md-typeset .grid.cards.eduwe-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 60em) {
+  .md-typeset .grid.cards.eduwe-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40em) {
+  .md-typeset .grid.cards.eduwe-cols-4,
+  .md-typeset .grid.cards.eduwe-cols-3,
+  .md-typeset .grid.cards.eduwe-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* no keyboard on a phone: hide the "/" hint and keep the search text on one line */
+  .eduwe-search kbd {
+    display: none;
+  }
+
+  .eduwe-search span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* four-across cards are narrower: slightly smaller icon tile and padding so titles stay on one line */
+@media (min-width: 72.01em) {
+  .md-typeset .grid.cards.eduwe-cols-4 > ul > li {
+    padding: 1.4rem 1.2rem 1.2rem;
+  }
+
+  .md-typeset .grid.cards.eduwe-cols-4 .twemoji.lg {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.5rem;
+  }
+
+  .md-typeset .grid.cards.eduwe-cols-4 > ul > li p:first-child {
+    font-size: 0.98rem;
+    white-space: nowrap;
+  }
+}
+
+/* ===== Hover zoom on screenshots (wrapper added by javascripts/zoom.js) ===== */
+.md-typeset .eduwe-zoom {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: top;
+  border: 1px solid var(--eduwe-card-border);
+  border-radius: 0.8rem;
+  box-shadow: var(--eduwe-card-shadow);
+  color: inherit;
+  line-height: 0;
+}
+
+.md-typeset .eduwe-zoom img {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+/* only where there is a mouse: the image magnifies while the pointer is over it */
+@media (hover: hover) and (pointer: fine) {
+  .md-typeset .eduwe-zoom {
+    cursor: zoom-in;
+  }
+
+  .md-typeset .eduwe-zoom:hover img {
+    transform: scale(2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .eduwe-zoom img {
+    transition: none;
+  }
+}

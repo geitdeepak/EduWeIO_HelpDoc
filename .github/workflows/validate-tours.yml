@@ -1,0 +1,59 @@
+name: Validate tours
+
+# Runs on every pull request. A tour breaks either when a writer adds a bad target
+# (this repo) or when a developer removes an element (eduwe-app runs the mirror of this workflow).
+#
+# Setup for the target check (until this is done the check is skipped with a warning):
+#   - repository variable  EDUWE_APP_REPO       e.g. "your-org/eduwe-app"
+#   - repository secret    EDUWE_APP_READ_TOKEN a token with read access to that repo (needed if it is private)
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validate tour and page frontmatter
+        run: npm run build:tours
+
+      - name: TODO report
+        run: |
+          count=$(grep -rn "TODO" docs/ | wc -l)
+          echo "Unverified TODOs in docs/: $count"
+          echo "### Unverified TODOs in docs/: $count" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check app repo is configured
+        id: cfg
+        run: |
+          if [ -z "${{ vars.EDUWE_APP_REPO }}" ]; then
+            echo "::warning::EDUWE_APP_REPO is not set - skipping the data-tour target check. Set it once the data-tour attributes are live in eduwe-app."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout eduwe-app
+        if: steps.cfg.outputs.run == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.EDUWE_APP_REPO }}
+          token: ${{ secrets.EDUWE_APP_READ_TOKEN }}
+          path: eduwe-app
+
+      - name: Check every tour target exists in the app source
+        if: steps.cfg.outputs.run == 'true'
+        run: node scripts/check-tour-targets.js --app eduwe-app

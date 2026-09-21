@@ -1,0 +1,66 @@
+name: Deploy docs
+
+# Build and publish help.eduwe.io on every merge to main.
+# One-time setup: repo Settings > Pages > Source = "GitHub Actions".
+# When moving to help.eduwe.io, add docs/CNAME containing "help.eduwe.io" and set the custom domain in Pages settings.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: pip install -r requirements.txt
+      - run: npm ci
+
+      # Validates every tour and page; fails the build on a schema error.
+      - name: Build tours and help index
+        run: npm run build:tours
+
+      - name: TODO report (unverified content still to resolve)
+        run: |
+          count=$(grep -rn "TODO" docs/ | wc -l)
+          echo "Unverified TODOs in docs/: $count"
+          echo "### Unverified TODOs in docs/: $count" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build site (strict) and add tours.json + help-index.json
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

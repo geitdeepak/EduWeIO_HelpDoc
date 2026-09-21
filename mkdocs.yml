@@ -1,0 +1,81 @@
+site_name: EduWe Help
+site_description: Help for learners, instructors and administrators on eduwe.io
+# TODO: use the GitHub Pages URL here until DNS for help.eduwe.io is live
+site_url: https://help.eduwe.io/
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Dark first to match EduWe; the toggle switches to light.
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Create An Account: getting-started/create-account.md
+      - Log In: getting-started/log-in.md
+      - Your Dashboard: getting-started/dashboard.md
+      - Themes And Display: getting-started/themes-and-display.md
+  - Learners:
+      - Browse The Catalog: learner/browse-catalog.md
+      - Course Codes: learner/course-codes.md
+      - Fully Paid Vs On Demand: learner/pricing-models.md
+      - Watch A Demo: learner/watch-a-demo.md
+      - Cart And Checkout: learner/cart-and-checkout.md
+      - My Courses: learner/my-courses.md
+      - Taking A Course: learner/taking-a-course.md
+      - Quizzes And Assignments: learner/quizzes-and-assignments.md
+      - Certificates: learner/certificates.md
+      - Profile And Settings: learner/profile-and-settings.md
+  - Instructors:
+      - Create A Course: instructor/create-course.md
+      - Add Modules And Lessons: instructor/add-modules-and-lessons.md
+      - Upload Content: instructor/upload-content.md
+      - Build A Quiz: instructor/build-a-quiz.md
+      - Pricing And Publishing: instructor/pricing-and-publishing.md
+      - Grading And Reports: instructor/grading-and-reports.md
+  - Administrators:
+      - Manage Users: admin/manage-users.md
+      - Manage Categories: admin/manage-categories.md
+      - Coupons And Discounts: admin/coupons-and-discounts.md
+      - Orders And Payments: admin/orders-and-payments.md
+      - Reports And Analytics: admin/reports-and-analytics.md
+  - Support:
+      - FAQ: support/faq.md
+      - Troubleshooting: support/troubleshooting.md
+      - Contact: support/contact.md

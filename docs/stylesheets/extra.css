@@ -162,6 +162,15 @@ html {
   color: var(--md-accent-fg-color);
 }
 
+/* footer copyright: centered, since it is the only thing in that row (no social icons configured) */
+.md-footer-meta__inner {
+  justify-content: center;
+}
+
+.md-copyright {
+  text-align: center;
+}
+
 /* prev/next footer: rounded cards instead of flat bars */
 .md-footer__link {
   transition: opacity 0.15s ease;

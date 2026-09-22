@@ -4,6 +4,11 @@ site_description: Help for learners, instructors and administrators on eduwe.io
 site_url: https://help.eduwe.io/
 docs_dir: docs
 use_directory_urls: true
+copyright: "© 2026 EduWe. All rights reserved."
+
+extra:
+  # Replaces the default "Made with Material for MkDocs" footer line with the copyright above.
+  generator: false
 
 theme:
   name: material

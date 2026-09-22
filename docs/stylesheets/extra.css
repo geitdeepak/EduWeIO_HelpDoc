@@ -69,13 +69,33 @@ html {
   border-radius: 2rem;
 }
 
-.md-tabs__link {
-  font-weight: 700;
-  opacity: 0.85;
+/* section tabs: bigger text, and a rounded pill behind the hovered/active tab instead of a bare
+   opacity change. (".md-tabs__link--active" below was never a real Material class, so the old rule
+   here never matched anything - the real active selector is ".md-tabs__item--active .md-tabs__link".) */
+.md-tabs__item {
+  display: flex;
+  align-items: center;
+  height: 3rem;
 }
 
-.md-tabs__link--active,
+.md-tabs__link {
+  margin-top: 0;
+  padding: 0.4rem 0.95rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  opacity: 0.8;
+  transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
 .md-tabs__link:hover {
+  background-color: rgba(4, 20, 29, 0.12);
+  transform: translateY(-1px);
+}
+
+.md-tabs__item--active .md-tabs__link {
+  background-color: rgba(4, 20, 29, 0.16);
   opacity: 1;
 }
 

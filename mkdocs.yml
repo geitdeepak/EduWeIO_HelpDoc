@@ -82,19 +82,10 @@ nav:
       - Quizzes And Assignments: learner/quizzes-and-assignments.md
       - Certificates: learner/certificates.md
       - Profile And Settings: learner/profile-and-settings.md
-  - Instructors:
-      - Create A Course: instructor/create-course.md
-      - Add Modules And Lessons: instructor/add-modules-and-lessons.md
-      - Upload Content: instructor/upload-content.md
-      - Build A Quiz: instructor/build-a-quiz.md
-      - Pricing And Publishing: instructor/pricing-and-publishing.md
-      - Grading And Reports: instructor/grading-and-reports.md
-  - Administrators:
-      - Manage Users: admin/manage-users.md
-      - Manage Categories: admin/manage-categories.md
-      - Coupons And Discounts: admin/coupons-and-discounts.md
-      - Orders And Payments: admin/orders-and-payments.md
-      - Reports And Analytics: admin/reports-and-analytics.md
+  # Instructors and Administrators sections are hidden until their guides are written.
+  # The content lives in ../drafts/instructor and ../drafts/admin (moved out of docs/ so
+  # they build no pages and appear in no nav). Move a folder back under docs/ and add its
+  # nav block here (see git history of this file) to bring a section back.
   - Support:
       - FAQ: support/faq.md
       - Troubleshooting: support/troubleshooting.md

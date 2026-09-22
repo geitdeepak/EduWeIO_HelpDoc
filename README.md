@@ -90,6 +90,9 @@ codes, Popular, Hindi, and so on) is spread across those markers; search for the
 
 - `data-tour` attributes, `src/help/`, the progress API and the eduwe-app CI mirror live in the app repo; see
   [../eduwe-app-handoff/README.md](../eduwe-app-handoff/README.md).
-- Screenshots, instructor and admin page content (needs those accounts), and the nightly Playwright run (needs seeded
-  staging accounts).
+- Instructor and administrator guides: drafted but hidden. They are outlines only (needs those accounts to fill in),
+  so they are kept in [../drafts/instructor](../drafts/instructor) and [../drafts/admin](../drafts/admin), outside
+  `docs/`, and build no pages. To bring a section back, move its folder under `docs/` and restore its `nav:` block in
+  `mkdocs.yml` (see that file's git history).
+- Screenshots for the remaining learner pages, and the nightly Playwright run (needs seeded staging accounts).
 - Hindi: if needed, add a `lang` field to tour frontmatter and one tour file per language.

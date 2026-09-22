@@ -117,6 +117,82 @@ html {
   box-shadow: var(--eduwe-card-shadow);
 }
 
+/* buttons everywhere, not only in the hero */
+.md-typeset .md-button {
+  border-radius: 2rem;
+  padding: 0.5em 1.4em;
+  font-weight: 700;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .md-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 120, 170, 0.22);
+}
+
+.md-typeset .md-button--primary:hover {
+  color: var(--md-primary-bg-color);
+}
+
+/* inline code: a small tinted pill instead of a plain grey box */
+.md-typeset code {
+  border-radius: 0.35rem;
+  background-color: rgba(0, 176, 240, 0.1);
+}
+
+.md-typeset pre code {
+  background-color: transparent;
+}
+
+/* blockquotes: a brand-coloured rule instead of the default grey one */
+.md-typeset blockquote {
+  border-left: 0.2rem solid #00b0f0;
+  color: var(--eduwe-muted, var(--md-default-fg-color--light));
+}
+
+/* left sidebar: the active page gets a soft rounded highlight, like a modern app nav */
+.md-nav__link--active {
+  border-radius: 0.5rem;
+  background: rgba(0, 176, 240, 0.12);
+}
+
+.md-nav__item .md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* prev/next footer: rounded cards instead of flat bars */
+.md-footer__link {
+  transition: opacity 0.15s ease;
+}
+
+.md-footer-nav__link {
+  border-radius: 0.6rem;
+}
+
+.md-footer-nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* search results: rounded panel and a subtle hover on each result */
+.md-search__output {
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.md-search-result__link:hover,
+.md-search-result__link[data-md-state="active"] {
+  background-color: rgba(0, 176, 240, 0.08);
+}
+
+/* a visible, brand-coloured focus ring for keyboard users, on every page */
+a:focus-visible,
+button:focus-visible,
+.md-button:focus-visible {
+  outline: 2px solid #00b0f0;
+  outline-offset: 2px;
+}
+
 /* ===== Help home page ===== */
 
 /* hero */
@@ -124,9 +200,9 @@ html {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  margin: 0.6rem 0 3rem;
-  padding: 4.2rem 3rem 3.4rem;
-  border-radius: 1.6rem;
+  margin: 0.6rem 0 2rem;
+  padding: 2.2rem 2.4rem 2rem;
+  border-radius: 1.2rem;
   color: #fff;
   background:
     radial-gradient(900px 380px at 100% -20%, rgba(0, 176, 240, 0.6), transparent 62%),
@@ -148,28 +224,29 @@ html {
 
 .eduwe-eyebrow {
   display: inline-block;
-  padding: 0.28rem 0.9rem;
+  padding: 0.22rem 0.8rem;
   border: 1px solid rgba(0, 176, 240, 0.45);
   border-radius: 2rem;
   background: rgba(0, 176, 240, 0.16);
   color: #7fdcff;
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 800;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
 .md-typeset .eduwe-hero h1 {
-  margin: 1rem 0 0.8rem;
+  margin: 0.7rem 0 0.5rem;
   color: #fff;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  line-height: 1.08;
+  font-size: clamp(1.7rem, 3.6vw, 2.5rem);
+  line-height: 1.12;
 }
 
 .md-typeset .eduwe-hero p {
   max-width: 36rem;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.86);
-  font-size: 1.08rem;
+  font-size: 1rem;
 }
 
 /* search bar in the hero: the label opens the site search */
@@ -177,14 +254,14 @@ html {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  max-width: 34rem;
-  margin: 1.7rem 0 1.5rem;
-  padding: 0.85rem 1.25rem;
+  max-width: 30rem;
+  margin: 1.1rem 0 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 3rem;
   background: rgba(255, 255, 255, 0.96);
   color: #3b4a56;
   cursor: text;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -216,8 +293,8 @@ html {
 }
 
 .md-typeset .eduwe-hero .md-button {
-  margin: 0.3rem 0.6rem 0 0;
-  padding: 0.6em 1.7em;
+  margin: 0.25rem 0.5rem 0 0;
+  padding: 0.5em 1.4em;
   border-radius: 2rem;
   font-weight: 700;
 }
@@ -489,8 +566,8 @@ html {
 
 @media (max-width: 40em) {
   .md-typeset .eduwe-hero {
-    padding: 2.6rem 1.4rem 2.2rem;
-    border-radius: 1.2rem;
+    padding: 1.8rem 1.3rem 1.6rem;
+    border-radius: 1rem;
   }
 
   .md-typeset .eduwe-steps ol {

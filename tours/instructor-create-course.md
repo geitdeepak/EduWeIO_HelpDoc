@@ -14,7 +14,9 @@ steps:
     body: "Select the EduWe logo to return to the catalog and see how learners will find your course."
   - target: '[data-tour="help-btn"]'
     title: Step-By-Step Help
-    body: "Select **?** for help on this screen, including [how to create a course](help:instructor/create-course)."
+    # TODO: link to the instructor course-creation guide once it is written and published (see drafts/instructor).
+    body: "Select **?** for help on this screen."
 ---
 
-Writer notes (not shipped to the app): placeholder tour, manual trigger, until instructor targets exist.
+Writer notes (not shipped to the app): placeholder tour, manual trigger, until instructor targets exist. The
+instructor help pages are drafted but not yet published (see drafts/instructor), so this tour does not link to one.

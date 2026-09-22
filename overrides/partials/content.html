@@ -1,0 +1,29 @@
+{#-
+  Overrides Material's partials/content.html (see the installed package for the original) to add a
+  slim "page head" banner above every content page: a role badge plus the page's own `summary:`
+  frontmatter, shown as a subtitle. No per-page Markdown edits are needed — new pages get it for free
+  as soon as they set `role` and `summary`. The home page keeps its own bespoke hero instead.
+-#}
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+
+{% if not page.is_homepage and page.meta and page.meta.summary %}
+  {% set roles = page.meta.role %}
+  {% if roles is string %}{% set roles = [roles] %}{% endif %}
+  <div class="eduwe-pagehead">
+    {% if roles %}
+      <div class="eduwe-pagehead__roles">
+        {% for r in roles %}<span class="eduwe-role eduwe-role--{{ r }}">{{ r | capitalize }}</span>{% endfor %}
+      </div>
+    {% endif %}
+    <p class="eduwe-pagehead__summary">{{ page.meta.summary }}</p>
+  </div>
+{% endif %}
+
+{% if "<h1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+{{ page.content }}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

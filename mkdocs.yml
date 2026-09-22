@@ -8,6 +8,9 @@ use_directory_urls: true
 theme:
   name: material
   language: en
+  # Small template override (overrides/partials/content.html) that adds the per-page role/summary
+  # banner described in STYLE-GUIDE.md "Page Head". Everything else here is stock Material.
+  custom_dir: overrides
   font:
     text: Nunito
     code: Roboto Mono

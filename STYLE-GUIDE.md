@@ -26,9 +26,19 @@ tour: visitor-browse-courses # optional; otherwise the tour on the same route fo
 ---
 ```
 
-- `summary` is what the Help drawer shows, so write it for someone looking at that screen right now. If you omit it, the first paragraph is used.
+- `summary` is what the Help drawer shows, **and** what the help site itself shows in the page head banner (see below), so write it for someone looking at that screen right now. If you omit it, the first paragraph is used for the Help drawer, but no banner is shown.
 - `app_route` must match the route in eduwe-app exactly. Use `null` until it is confirmed (and add a `TODO`).
 - New pages must also be added to `nav:` in `mkdocs.yml`, or the strict build warns.
+
+## Page Head
+
+Every content page automatically gets a small banner above its `# Heading`, showing the page's `role` as pills and its
+`summary` as a subtitle. It comes from `role` and `summary` in the frontmatter — nothing to write by hand, and no way
+to opt out short of leaving `summary` empty. It is produced by `overrides/partials/content.html`, a small override of
+Material's own content template (`custom_dir: overrides` in `mkdocs.yml`); the home page skips it because
+`page.is_homepage` is true there, and it has its own hero instead (see below). If Material for MkDocs is upgraded and
+the banner stops appearing or duplicates, compare `overrides/partials/content.html` against the new version's
+`partials/content.html` in the installed package and update the override to match.
 
 ## Writing
 

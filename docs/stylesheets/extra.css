@@ -193,6 +193,41 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
+/* page head: the role/summary banner that overrides/partials/content.html adds above every
+   content page's H1 (everywhere except the home page, which has its own hero). */
+.eduwe-pagehead {
+  margin: 0 0 1.4rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.9rem;
+  border-left: 0.25rem solid #00b0f0;
+  background: var(--eduwe-tile);
+}
+
+.eduwe-pagehead__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.eduwe-role {
+  display: inline-block;
+  padding: 0.06rem 0.65rem;
+  border-radius: 1rem;
+  background: rgba(0, 176, 240, 0.22);
+  color: var(--md-typeset-a-color);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.md-typeset .eduwe-pagehead__summary {
+  margin: 0;
+  color: var(--eduwe-muted);
+  font-size: 1rem;
+}
+
 /* ===== Help home page ===== */
 
 /* hero */

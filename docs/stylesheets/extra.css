@@ -69,9 +69,15 @@ html {
   border-radius: 2rem;
 }
 
-/* section tabs: bigger text, and a rounded pill behind the hovered/active tab instead of a bare
-   opacity change. (".md-tabs__link--active" below was never a real Material class, so the old rule
-   here never matched anything - the real active selector is ".md-tabs__item--active .md-tabs__link".) */
+/* section tabs: centered instead of left-aligned (with only 4-5 tabs, flex-start left them bunched
+   at the left edge with a large empty gap on the right), bigger text, and a rounded pill behind the
+   hovered/active tab instead of a bare opacity change. (".md-tabs__link--active" below was never a
+   real Material class, so the old rule here never matched anything - the real active selector is
+   ".md-tabs__item--active .md-tabs__link".) */
+.md-tabs__list {
+  justify-content: center;
+}
+
 .md-tabs__item {
   display: flex;
   align-items: center;

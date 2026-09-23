@@ -30,26 +30,54 @@ A **Demo Course Preview** badge sits above the course title, so you know you are
 
 ### Course Includes
 
-A **Course Includes** card sums up the course in numbers, so a first-time visitor can see the full scope of what they get before buying:
+A **Course Includes** card sums up the course in numbers, so a first-time visitor can see the full scope of what they get before buying.
 
-| Content | Amount |
-|---|---|
-| Videos | 165 lessons, 68 hrs |
-| Notes | 554 pages |
-| TYS | 224 topic-wise self tests |
-| MCQs | 162 practice questions |
-| CBSQs | 42 concept-based questions |
-| SEQs | 230 descriptive questions |
-| Labs | 20 practical exercises |
-| Projects | 1 real-life project |
+!!! example "Sample: What One Course Includes"
+    These numbers are from one example course, to show the kind of breakdown you will see. They are not the same for every course.
+
+<div class="grid cards eduwe-cols-4" markdown>
+
+-   :material-play-circle-outline:{ .lg .middle } **Videos**
+
+    165 lessons · 68 hrs
+
+-   :material-notebook-outline:{ .lg .middle } **Notes**
+
+    554 pages
+
+-   :material-clipboard-check-outline:{ .lg .middle } **TYS**
+
+    224 topic-wise self tests
+
+-   :material-checkbox-marked-circle-outline:{ .lg .middle } **MCQs**
+
+    162 practice questions
+
+-   :material-comment-text-outline:{ .lg .middle } **CBSQs**
+
+    42 concept-based questions
+
+-   :material-file-document-edit-outline:{ .lg .middle } **SEQs**
+
+    230 descriptive questions
+
+-   :material-flask-outline:{ .lg .middle } **Labs**
+
+    20 practical exercises
+
+-   :material-briefcase-variant-outline:{ .lg .middle } **Projects**
+
+    1 real-life project
+
+</div>
 
 <figure markdown>
-  ![A Course Includes card listing, in two columns: Videos 165 lessons / 68 hrs, Notes 554 pages, TYS 224 topic-wise self tests, MCQs 162 practice questions, CBSQs 42 concept-based questions, SEQs 230 descriptive questions, Labs 20 practical exercises, and Projects 1 real life project](../assets/images/demo/demo-04-course-includes.png){ loading=lazy }
-  <figcaption>The Course Includes card, showing this example course's full content in numbers.</figcaption>
+  ![A Course Includes card for an example course, listing, in two columns: Videos 165 lessons / 68 hrs, Notes 554 pages, TYS 224 topic-wise self tests, MCQs 162 practice questions, CBSQs 42 concept-based questions, SEQs 230 descriptive questions, Labs 20 practical exercises, and Projects 1 real life project](../assets/images/demo/demo-04-course-includes.png){ loading=lazy }
+  <figcaption>The Course Includes card, as it appears in the app, for this sample course.</figcaption>
 </figure>
 
-<!-- Source: product owner (Course Includes helps a first-time visitor see what a course includes) and the demo-04-course-includes.png screenshot. -->
-<!-- TODO: confirm which course this example is from, and whether every course shows all eight rows or only the ones that apply (for example, an Applied course without CBSQs/SEQs/Labs). -->
+<!-- Source: product owner (Course Includes helps a first-time visitor see what a course includes; the numbers shown are a sample, not fixed for every course) and the demo-04-course-includes.png screenshot. -->
+<!-- TODO: confirm which course this sample is from, and whether every course shows all eight rows or only the ones that apply (for example, an Applied course without CBSQs/SEQs/Labs). -->
 
 ## Watch The Demo Video
 

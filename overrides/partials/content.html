@@ -23,7 +23,14 @@
 {% if "<h1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
-{{ page.content }}
+{% if page.is_homepage %}
+  {#- Marks the home page's own content so extra.css can opt it out of the
+      generic inner-page polish (the h2 divider, list markers, hr style)
+      below, since the home page already has its own bespoke look. -#}
+  <div class="eduwe-home">{{ page.content }}</div>
+{% else %}
+  {{ page.content }}
+{% endif %}
 {% include "partials/source-file.html" %}
 {% include "partials/feedback.html" %}
 {% include "partials/comments.html" %}

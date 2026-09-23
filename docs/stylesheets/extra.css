@@ -44,15 +44,45 @@
 /* Logo: the EduWe logo is brand blue, so on the blue header it sits on a dark rounded tab (the same dark as the EduWe app).
    The logo colours are never changed. To use a plain header instead, remove this block. */
 .md-header__button.md-logo {
-  margin: 0.3rem 0.5rem 0.3rem 0.2rem;
-  padding: 0.25rem 0.7rem;
+  margin: 3px 6px 3px 3px;
+  padding: 4px 10px;
   background-color: #191919;
   border-radius: 0.5rem;
 }
 
 .md-header__button.md-logo img {
-  height: 1.35rem;
+  height: 20px;
   width: auto;
+}
+
+/* ===== Compact header and tabs =====
+   Material grows the root font-size on wide screens (html{font-size:137.5%}
+   at 100em and up, 150% at 125em and up), which inflates every rem-based
+   header/tab measurement along with it - the top bar kept getting taller on
+   bigger monitors. Pin the header row and the tab row to a fixed pixel
+   height instead, so the top bar stays the same modest height on any
+   screen. */
+.md-header__inner {
+  min-height: 42px;
+}
+
+.md-header__title {
+  height: 34px;
+  line-height: 34px;
+}
+
+.md-search__form {
+  height: 34px;
+}
+
+.md-header__button {
+  margin: 3px;
+  padding: 7px;
+}
+
+.md-header .md-icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 /* ===== Modern polish for every page ===== */
@@ -81,14 +111,14 @@ html {
 .md-tabs__item {
   display: flex;
   align-items: center;
-  height: 2.5rem;
+  height: 34px;
 }
 
 .md-tabs__link {
   margin-top: 0;
-  padding: 0.3rem 0.85rem;
+  padding: 4px 14px;
   border-radius: 2rem;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.01em;
   opacity: 0.8;
@@ -117,6 +147,49 @@ html {
 
 .md-typeset h3 {
   font-weight: 700;
+}
+
+/* a soft rule under every h2, so long inner pages read as clear sections
+   instead of one unbroken wall of text - the visual rhythm the home page
+   already has from its cards and bands. */
+.md-typeset h2 {
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--eduwe-card-border);
+}
+
+/* brand-coloured list markers instead of the plain default dot/number */
+.md-typeset ul > li::marker {
+  color: #00b0f0;
+}
+
+.md-typeset ol > li::marker {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+}
+
+/* a soft gradient divider instead of the plain grey default rule */
+.md-typeset hr {
+  height: 2px;
+  border: 0;
+  background: linear-gradient(90deg, rgba(0, 176, 240, 0.55), rgba(0, 176, 240, 0.04));
+}
+
+/* the home page keeps its own bespoke section headings, cards and bands -
+   opt it out of the three generic touches just above. */
+.md-typeset .eduwe-home h2 {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.md-typeset .eduwe-home ul > li::marker,
+.md-typeset .eduwe-home ol > li::marker {
+  color: inherit;
+}
+
+.md-typeset .eduwe-home hr {
+  height: 0;
+  background: none;
+  border-bottom: 0.05rem solid var(--md-default-fg-color--lightest);
 }
 
 .md-typeset figure img {

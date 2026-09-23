@@ -43,6 +43,24 @@ A row under the title shows the current date, time and day, with a **Fetch** but
 
 The eduwe.io FAQ says your dashboard shows real-time usage and spend.
 
+<figure markdown>
+  ![The dashboard's summary row, with the Balance, VoD, OnlineIDE and AI counters and the Statement button outlined in red](../assets/images/dashboard/dashboard-09-summary-and-statement-button.png){ loading=lazy }
+  <figcaption>The summary row, with the Statement button on the right.</figcaption>
+</figure>
+
+Select **Statement** to see your usage and spend. The window opens with your account name, your free balances (**Free Bal IDE Exe (Nos)** and **Free Bal AI (Tokens)**), and a **Statement: Last 10 Days** table with one row per day: **Date**, **Paid AI (Tokens)**, **Paid IDE Executions (Nos)**, **VoD Time (Hrs)**, **Amount Spent**, **Amount Added** and **Balance Amount**.
+
+<figure markdown>
+  ![The Statement window, with account name and free balances at the top, and a Statement: Last 10 Days table outlined in red, with columns Date, Paid AI (Tokens), Paid IDE Executions (Nos), VoD Time (Hrs), Amount Spent, Amount Added and Balance Amount](../assets/images/dashboard/dashboard-10-statement-window.png){ loading=lazy }
+  <figcaption>The Statement window, opened from the Statement button.</figcaption>
+</figure>
+
+Your **AI** counter is token-based: using EduWeAi reduces it, and once it reaches 0, you need to [recharge your account](#recharge-your-account) before you can use EduWeAi again.
+
+<!-- Source: product owner (the AI counter is token-based, is reduced by EduWeAi usage, and needs a recharge once it reaches 0) and the Statement window screenshots (dashboard-09, dashboard-10). -->
+<!-- TODO: confirm what Fetch does. -->
+<!-- TODO: confirm whether Online IDE similarly stops working at 0 executions, and whether VoD stops at 0 hours. -->
+
 Below the counters are four buttons that filter your course list or open a tool. See [Filters and tools](#filters-and-tools).
 
 ## Recharge Your Account
@@ -154,8 +172,7 @@ The **TYS** and **MCQ** circles show the percentage of each that you have attemp
 <!-- TODO: confirm whether TYS is the Test Yourself questions and whether the circle counts questions or sections attempted. -->
 
 <!-- Source: eduwe.io learner dashboard screenshot (dashboard-01-learner-dashboard.png) and FAQ "How does pricing work?". -->
-<!-- TODO: define each counter: what Balance is and how it relates to the Recharge link, whether VoD is video on demand, what Exe means, and what an AI token is. The Balance, VoD, OnlineIDE and AI counters may be what a recharge pays for; confirm with the product manager. -->
-<!-- TODO: explain the Fetch and Statement buttons (does Statement show usage and spend?). -->
+<!-- TODO: define the Balance, VoD and OnlineIDE counters (whether VoD is video on demand, what Exe means) the way the AI counter is now defined above. The Balance, VoD, OnlineIDE and AI counters may be what a recharge pays for; confirm with the product manager. -->
 <!-- TODO: explain the FORUM button and the Help menu. There is already a Help menu here, so decide how it should work alongside the new ? help button. -->
 <!-- TODO: confirm that the icon at the far right of the top bar logs you out (it matches the LogOut icon in the side menu). -->
 <!-- TODO: the Fully Paid example spans exactly one year (01-Sep-26 to 01-Sep-27), which matches the one-year rule. The On Demand example also spans one year; confirm the On Demand access period. -->

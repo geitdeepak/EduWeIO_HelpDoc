@@ -28,6 +28,29 @@ A **Demo Course Preview** badge sits above the course title, so you know you are
 - **Course details.** The page shows the course title, a short description, the tags **Structured Learning**, **12 Months Access** and **Certificate Included**, and the instructor's name and short profile.
 - **Video learning preview.** A panel explains the video learning. You can watch topic-wise lessons, pause at difficult points, and use the AI Video Tutor to ask questions, clarify concepts, create notes and continue topic-focused discussions.
 
+### Course Includes
+
+A **Course Includes** card sums up the course in numbers, so a first-time visitor can see the full scope of what they get before buying:
+
+| Content | Amount |
+|---|---|
+| Videos | 165 lessons, 68 hrs |
+| Notes | 554 pages |
+| TYS | 224 topic-wise self tests |
+| MCQs | 162 practice questions |
+| CBSQs | 42 concept-based questions |
+| SEQs | 230 descriptive questions |
+| Labs | 20 practical exercises |
+| Projects | 1 real-life project |
+
+<figure markdown>
+  ![A Course Includes card listing, in two columns: Videos 165 lessons / 68 hrs, Notes 554 pages, TYS 224 topic-wise self tests, MCQs 162 practice questions, CBSQs 42 concept-based questions, SEQs 230 descriptive questions, Labs 20 practical exercises, and Projects 1 real life project](../assets/images/demo/demo-04-course-includes.png){ loading=lazy }
+  <figcaption>The Course Includes card, showing this example course's full content in numbers.</figcaption>
+</figure>
+
+<!-- Source: product owner (Course Includes helps a first-time visitor see what a course includes) and the demo-04-course-includes.png screenshot. -->
+<!-- TODO: confirm which course this example is from, and whether every course shows all eight rows or only the ones that apply (for example, an Applied course without CBSQs/SEQs/Labs). -->
+
 ## Watch The Demo Video
 
 Find the **Demo Video** panel and select the play button. The panel is called a demo lesson, and it says it is a selected preview lesson from the actual course.

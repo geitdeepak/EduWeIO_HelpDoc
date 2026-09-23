@@ -40,18 +40,54 @@ Each tab shows a different kind of content for the chapter, topic and subtopic y
 
 EduWe suggests working through a topic's content in this order:
 
-| Order | Content | When |
-|---|---|---|
-| 1 | Video | Start here |
-| 2 | TYS | After the video |
-| 3 | Notes | Available any time |
-| 4 | Course MCQs | After TYS |
-| 5 | SEQ / CBSQ | For exam writing |
-| 6 | Labs | For practical clarity |
+<ol class="eduwe-journey">
+  <li data-tone="video">
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">Video</span>
+      <span class="eduwe-journey__when">Start</span>
+    </span>
+  </li>
+  <li data-tone="tys">
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">TYS</span>
+      <span class="eduwe-journey__when">After Video</span>
+    </span>
+  </li>
+  <li>
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">Notes</span>
+      <span class="eduwe-journey__when">Any Time</span>
+    </span>
+  </li>
+  <li>
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">Course MCQs</span>
+      <span class="eduwe-journey__when">After TYS</span>
+    </span>
+  </li>
+  <li>
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">SEQ / CBSQ</span>
+      <span class="eduwe-journey__when">Exam Writing</span>
+    </span>
+  </li>
+  <li>
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">Labs</span>
+      <span class="eduwe-journey__when">Practical Clarity</span>
+    </span>
+  </li>
+</ol>
 
 <figure markdown>
   ![A Recommended Learning Journey card listing, in order: Video (Start), TYS (After Video), Notes (Available), Course MCQs (After TYS), SEQ / CBSQ (For exam writing), and Labs (For practical clarity)](../assets/images/course-home/course-home-18-recommended-learning-journey.png){ loading=lazy }
-  <figcaption>The Recommended Learning Journey card.</figcaption>
+  <figcaption>The Recommended Learning Journey card, as it appears in the app.</figcaption>
 </figure>
 
 <!-- TODO: confirm exactly where this card appears (for example on the Videos tab, alongside Continue Learning and Certification Path). -->

@@ -145,10 +145,10 @@ The **TYS** and **MCQ** circles show the percentage of each that you have attemp
 
 ### Course Rating: Your Own Rating
 
-**Course Rating** is your own rating of the course. It is given by you, the learner. Use the up and down arrows to change it. The number between the arrows is the rating you have given, which is 5 in the example. The scale runs from 1 (lowest) to 5 (highest).
+**Course Rating** is your own rating of the course. It is given by you, the learner. Use the up and down arrows to change it. The number between the arrows is the rating you have given, which is 5 in the example. The scale runs from 1 (lowest) to 5 (highest). Your rating saves instantly, and you can change it again later whenever you like.
 
-<!-- Source: product owner (TYS and MCQ circles show the attempted percentage; Course Rating is given by the learner, from 1 lowest to 5 highest) and the dashboard-03-course-row.png screenshot. -->
-<!-- TODO: confirm whether a rating change is saved straight away, whether you can change it later, and whether instructors or other learners see it. -->
+<!-- Source: product owner (TYS and MCQ circles show the attempted percentage; Course Rating is given by the learner, from 1 lowest to 5 highest, saves instantly and can be edited again later) and the dashboard-03-course-row.png screenshot. -->
+<!-- TODO: confirm whether instructors or other learners see your Course Rating. -->
 <!-- TODO: the first dashboard screenshot shows a course with only the arrows and no number between them. Confirm that this means you have not rated the course yet. -->
 <!-- TODO: explain the Certification circle (0.00% here) and the Performance stars. -->
 <!-- TODO: confirm whether TYS is the Test Yourself questions and whether the circle counts questions or sections attempted. -->

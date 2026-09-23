@@ -18,14 +18,14 @@ Codes seen on the catalog so far:
 
 | Code | Course, as shown on its card |
 |---|---|
-| AZR | Azure Foundation |
-| CLT | Cloud Computing |
-| DSA | DSA (Data Structure Using C) |
-| JAV | Java (Java Programming) |
-| PPS | C (Programming in C) |
-| PTH | Python |
+| `AZR` | Azure Foundation |
+| `CLT` | Cloud Computing |
+| `DSA` | DSA (Data Structure Using C) |
+| `JAV` | Java (Java Programming) |
+| `PPS` | C (Programming in C) |
+| `PTH` | Python |
 
-On the course demo page, the code also shows a number, for example **PPS 1101** for Programming in C. See [Watch A Demo](watch-a-demo.md).
+On the course demo page, the code also shows a number, for example `PPS 1101` for Programming in C. See [Watch A Demo](watch-a-demo.md).
 
 <!-- Source: eduwe.io catalog screenshots (home-06, home-09, home-16 and home-17) and the course demo page screenshot (demo-01). -->
 <!-- TODO: explain the number after the code (PPS 1101), for example whether it is the course number in a syllabus. -->

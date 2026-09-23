@@ -138,9 +138,40 @@ html {
 }
 
 .md-typeset table:not([class]) {
+  border: 1px solid var(--eduwe-card-border);
   border-radius: 0.8rem;
   overflow: auto;
   box-shadow: var(--eduwe-card-shadow);
+}
+
+/* a tinted, uppercase header row instead of the plain default one */
+.md-typeset table:not([class]) thead th {
+  padding: 0.85em 1.2em;
+  background: var(--eduwe-tile);
+  border: none;
+  color: var(--md-typeset-a-color);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.85em 1.2em;
+  border-top: 1px solid var(--eduwe-card-border);
+}
+
+/* brand-tinted row hover instead of the plain grey default */
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: var(--eduwe-tile);
+  box-shadow: none;
+}
+
+/* a value written as `code` inside a table cell (for example a course code or product name)
+   reads as a small bold badge, reusing the inline-code tint above */
+.md-typeset table:not([class]) td code {
+  padding: 0.15em 0.65em;
+  color: var(--md-typeset-a-color);
+  font-weight: 800;
 }
 
 /* buttons everywhere, not only in the hero */

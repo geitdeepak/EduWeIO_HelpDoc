@@ -111,22 +111,62 @@ Your TYS performance also counts toward earning the course's certificate. See [C
 
 ### Tutorials
 
-Select the **Tutorials** tab, then pick a **Chapter**, **Topic** and **Subtopic** in the sidebar. Tutorials mix a few formats: tutorial notes, tutorial videos, and questions and answers.
+Select the **Tutorials** tab, then pick a **Chapter** in the sidebar to work through that chapter's tutorials: tutorial videos and tutorial notes, presented as scenarios with questions and their answers.
 
-<!-- TODO: confirm how the tutorial notes/videos/Q&A formats are presented together or switched between on this tab. -->
-<!-- TODO: screenshot pending. -->
+<figure markdown>
+  ![The Tutorials tab, open on chapter 2 Virtualization Technology, showing "Scenario 1: Virtual Machine Provisioning" with Question 2.1 and its answer](../assets/images/course-home/course-home-09-tutorials-tab.png){ loading=lazy }
+  <figcaption>The Tutorials tab, working through a chapter's scenario-based questions and answers.</figcaption>
+</figure>
+
+<!-- TODO: confirm how the tutorial video and tutorial notes formats are presented together or switched between on this tab. -->
 
 ### MCQs
 
-<!-- TODO: walkthrough pending. -->
+Select the **MCQs** tab (1), then pick a **Chapter** in the sidebar (2). Two kinds of MCQs are available for the chapter:
+
+- **Test MCQs.** Click **Test MCQs** (3) to start a graded set of questions, one at a time, with **Previous**, **Submit** and **Next** buttons.
+- **Practice MCQs.** Listed directly under the chapter, one after another, to practise without starting a test.
+
+<figure markdown>
+  ![The MCQs tab, chapter Introduction to Cloud Computing selected, with the Test MCQs button and MCQ 1 open, showing four answer options and Previous, Submit and Next buttons](../assets/images/course-home/course-home-10-mcqs-test.png){ loading=lazy }
+  <figcaption>Test MCQs for a chapter, opened with the Test MCQs button.</figcaption>
+</figure>
+
+<figure markdown>
+  ![The MCQs tab, chapter Introduction to Cloud Computing selected, showing a Practice MCQs heading followed directly by MCQ 1 and MCQ 2, each with four answer options](../assets/images/course-home/course-home-11-mcqs-practice.png){ loading=lazy }
+  <figcaption>Practice MCQs for the same chapter, listed without needing a Test MCQs button.</figcaption>
+</figure>
+
+Submit the correct answers in a Test MCQs set, and your result feeds the **MCQ** progress circle for the course on your [dashboard](../getting-started/dashboard.md#tys-and-mcq-what-you-have-attempted), the same way TYS does. It also counts toward earning the course's certificate. See [Certificates](certificates.md).
+
+<figure markdown>
+  ![A course row on the dashboard with the MCQ circle highlighted](../assets/images/course-home/course-home-12-dashboard-mcq-circle.png){ loading=lazy }
+  <figcaption>Test MCQ results show up as this progress circle on your dashboard.</figcaption>
+</figure>
+
+<!-- TODO: confirm whether Practice MCQs also feed the dashboard's MCQ circle, or only Test MCQs do. -->
+<!-- TODO: confirm MCQ attempt rules: retakes, time limit, and whether the dashboard circle shows percentage attempted or percentage correct. -->
 
 ### CBSQs
 
-<!-- TODO: walkthrough pending. Confirm what CBSQ stands for. -->
+**CBSQ** stands for **Concept Based Short Questions**. Select the **CBSQs** tab (1), then pick a **Chapter** in the sidebar (2) to read its instructor-written short questions and answers, meant to strengthen your understanding of the chapter's concepts.
+
+<figure markdown>
+  ![The CBSQs tab, open on chapter 1 Introduction to Cloud Computing, showing Question 1.1 and its answer, followed by Question 1.2](../assets/images/course-home/course-home-13-cbsqs-tab.png){ loading=lazy }
+  <figcaption>The CBSQs tab, working through a chapter's concept-based short questions.</figcaption>
+</figure>
 
 ### SEQs
 
-<!-- TODO: walkthrough pending. Confirm what SEQ stands for. -->
+**SEQ** stands for **Semester End Questions**. Select the **SEQs** tab (1), then pick a **Chapter** in the sidebar (2) to read its long-form question-and-answer content, written to the pattern of various universities' exams, to help you prepare for your end-semester exam.
+
+<figure markdown>
+  ![The SEQs tab, open on chapter 1 Introduction to Cloud Computing, showing Question 1.1 and the start of its answer](../assets/images/course-home/course-home-14-seqs-tab.png){ loading=lazy }
+  <figcaption>The SEQs tab, working through a chapter's semester-end style questions.</figcaption>
+</figure>
+
+!!! note "CBSQs And SEQs Are Academic Only"
+    CBSQs and SEQs are only available in Academic courses, not in Applied courses.
 
 ### Labs
 

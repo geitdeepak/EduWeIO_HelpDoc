@@ -40,6 +40,7 @@ EduWe has two types of course. The **Explore Our Courses** section introduces th
 <!-- Source: eduwe.io home page, "Explore Our Courses" section, and product owner (Academic courses are mapped to various universities' curricula; Applied courses are industry-oriented with real projects and aligned with the Academic courses). -->
 <!-- TODO: confirm whether the universities or curricula an Academic course maps to are named anywhere (for example on the course page), so learners can check their own syllabus. -->
 <!-- TODO: confirm where the Browse Academic and Browse Applied buttons take you (the matching tab, or another page). -->
+<!-- TODO: reconcile with taking-a-course.md#seqs: the product owner says CBSQs and SEQs only exist in Academic courses, but this eduwe.io marketing copy lists "concept-based Q&As" (CBSQs) under Applied Courses too. Confirm which is right and fix whichever page is wrong. -->
 <figure markdown>
   ![The Explore Our Courses section with an Academic Courses panel and an Applied Courses panel, each listing what it includes and ending with a Browse button](../assets/images/home/home-03-explore-courses.png){ loading=lazy }
   <figcaption>The Explore Our Courses section.</figcaption>

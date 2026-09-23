@@ -55,6 +55,38 @@
   width: auto;
 }
 
+/* On wide screens the logo moves down into the tabs row instead (overrides/partials/tabs.html), so
+   hide the header's copy there - but only above Material's own breakpoint for showing that row
+   (76.234375em), so narrower screens - where the tabs row is hidden entirely - keep the header logo
+   and are never left with none. */
+@media screen and (min-width: 76.25em) {
+  .md-header .md-logo {
+    display: none;
+  }
+}
+
+.md-tabs {
+  position: relative;
+}
+
+.md-tabs__logo {
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 0.5rem;
+  background-color: #191919;
+  transform: translateY(-50%);
+}
+
+.md-tabs__logo img {
+  display: block;
+  height: 1.05rem;
+  width: auto;
+}
+
 /* ===== Modern polish for every page ===== */
 
 html {

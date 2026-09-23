@@ -112,6 +112,12 @@ All of a course's videos are here. Select the **Videos** tab (1), then pick a **
 Below the player, three buttons let you switch views without leaving the topic:
 
 - The **blue book icon** opens that topic's notes right there, so you do not need to switch to the separate **Notes** tab to read them.
+
+    <figure markdown>
+      ![The three buttons below the video player, with the blue book icon on the left outlined in red](../assets/images/course-home/course-home-20-blue-book-icon.png){ loading=lazy }
+      <figcaption>The blue book icon, below the video player.</figcaption>
+    </figure>
+
 - The **yellow robot icon** opens EduWeAi in a panel beside the video, scoped to whatever topic is currently open:
 
     <figure markdown>

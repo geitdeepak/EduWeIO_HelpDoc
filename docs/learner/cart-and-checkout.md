@@ -9,14 +9,18 @@ summary: Add courses to your cart, review the total and pay.
 
 ## Add To Cart
 
-On a course card, choose **Fully Paid** or **On Demand**, then select **+Cart**. The cart icon in the header shows how many courses are in your cart.
+On a course card, choose **Fully Paid** or **On Demand**, then select **+Cart**. The course is added to your shopping cart, and the cart icon in the header shows how many courses are in it, so you can move on to check out whenever you are ready.
 
 You cannot switch between Fully Paid and On Demand after you buy a course, so check the option before you check out.
 
-<!-- TODO: optional screenshot of the header cart icon after adding a course, showing the count. -->
 <figure markdown>
   ![The +Cart button on a course card, outlined in red](../assets/images/home/home-13-add-to-cart.png){ loading=lazy }
   <figcaption>The +Cart button.</figcaption>
+</figure>
+
+<figure markdown>
+  ![The header with the EduWe logo, Home and Courses links, and the cart icon showing a count of 1, outlined in red, followed by the theme toggle and Log In and Sign Up links](../assets/images/cart/cart-05-header-cart-count.png){ loading=lazy }
+  <figcaption>The header cart icon, showing 1 course added.</figcaption>
 </figure>
 
 <!-- TODO: confirm behaviour when the same course is added twice. -->

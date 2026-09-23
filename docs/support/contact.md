@@ -33,12 +33,28 @@ The window also has **Suggestions** and **Messages** tabs, and **Report** and **
 
 ## Other Ways To Reach Us
 
+eduwe.io also has its own **Get In Touch** page, outside the dashboard:
+
+- **Address:** H-34, Sector-63, Noida, U.P. 201301
+- **Phone:** a phone number
 - **Email:** [info@ceekh.com](mailto:info@ceekh.com)
 - **Hours:** Monday to Friday, 10:00 to 18:00 IST
-- **Address:** H-34, Sector-63, Noida, U.P. 201301
+
+It also links to EduWe's LinkedIn, YouTube and GitHub.
+
+<figure markdown>
+  ![The Get In Touch page, outlined in red: on the left, the Address, Phone, Email and Hours details with LinkedIn, YouTube and GitHub icons; on the right, a contact form with Name, Email, Subject and Topic fields, a Message box, and Send Message and Email Us buttons](../assets/images/contact/contact-01-get-in-touch.png){ loading=lazy }
+  <figcaption>The Get In Touch page: contact details on the left, a contact form on the right.</figcaption>
+</figure>
+
+Beside the contact details is a form: **Name**, **Email**, **Subject**, a **Topic** list (**General** by default), and a **Message** box, followed by **Send Message** and **Email Us** buttons. Sending it means you agree to EduWe's terms and privacy policy.
 
 For questions about a specific course, use the discussion or Q&A links inside the course.
 
-<!-- Source: eduwe.io footer and FAQ. Re-check against the live site before each release. -->
-<!-- TODO: the live footer shows a placeholder phone number (+91 XXXXX XXXXX). Add the real number, or leave it off. -->
+<!-- Source: eduwe.io footer and FAQ, and the Get In Touch page screenshot (contact-01-get-in-touch.png). Re-check against the live site before each release. -->
+<!-- TODO: the live page shows a placeholder phone number (+91 XXXXX XXXXX). Add the real number, or leave it off. -->
 <!-- TODO: confirm whether a response-time commitment can be stated, and whether the support hours also apply to complaints raised through Connect. -->
+<!-- TODO: list the Topic options besides General. -->
+<!-- TODO: confirm what Send Message does versus Email Us (does Send Message submit in the page, and Email Us open your email app instead?). -->
+<!-- TODO: link to EduWe's terms and privacy policy pages once they exist. -->
+<!-- TODO: confirm whether this form reaches the same support team/ticket system as Connect, or a different inbox. -->

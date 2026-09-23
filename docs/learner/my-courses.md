@@ -11,8 +11,10 @@ Your purchased courses are listed on your [dashboard](../getting-started/dashboa
 
 For Fully Paid courses, access lasts one year from the day you subscribe.
 
+Click a course row (or its picture) to open that course. See [Taking a course](taking-a-course.md).
+
 <!-- Source: product owner (Fully Paid, one year), eduwe.io FAQ "How long do I have access?" and the learner dashboard screenshot. -->
 <!-- TODO: state the access period for On Demand courses. The dashboard example shows an On Demand course with exactly one year between Start-Date and End-Date. -->
-<!-- TODO: confirm whether there is a separate My courses page (the Academic Courses and Applied Courses buttons on the dashboard may list them), and how to resume a course from the dashboard. -->
+<!-- TODO: confirm whether there is a separate My courses page (the Academic Courses and Applied Courses buttons on the dashboard may list them). -->
 
 Next: [Taking a course](taking-a-course.md).

@@ -252,13 +252,13 @@ Use **Chat** to chat with EduWeAi about the course, chapter and topic you select
 
 ### My Notes
 
-Use **My Notes** to access and read the notes you have saved. The page is a **Note Editor**.
+Use **My Notes** to write, store and read your own notes as you go. The page is a **Note Editor**.
 
 1. Open the **My Notes** tab.
-2. Choose a course, a chapter and a topic.
-3. Select **Read** to open your saved notes.
+2. Choose a course, a chapter and a topic to file the note under.
+3. Write the note (it has a formatting toolbar and a **Max 50 KB** limit) and select **Save**, or select **Read** to open a note you saved earlier.
 
-The editor also has a **Save** button, and it shows **Max 50 KB** with a bar beside it.
+The same Note Editor also opens from inside a course, on its own **My Notes** tab. See [Taking a course: My Notes](../learner/taking-a-course.md#my-notes).
 
 <figure markdown>
   ![The My Notes tab, which is the Note Editor. It shows the title Note Editor, the text Max 50 KB with a bar, Save and Read buttons that look greyed out, and Select Course, Select Chapter and Select Topic lists. The page is shown in the light theme](../assets/images/ai/ai-07-my-notes-editor.png){ loading=lazy }

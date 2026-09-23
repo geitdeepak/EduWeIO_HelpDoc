@@ -197,7 +197,14 @@ Working through the project is implementation-based learning: instead of just re
 
 ### My Notes
 
-<!-- TODO: walkthrough pending. Confirm how this relates to the My Notes tool under EduWeAi on the dashboard. -->
+Select the **My Notes** tab to write and store your own notes as you explore a course. Choose a **Course** (1), **Chapter** (2) and **Topic** (3) to file the note under, write it in the Note Editor (it has a formatting toolbar, and a 50 KB limit per note), then **Save** it. Come back to **Read** (4) it later, from the same course or from any other.
+
+<figure markdown>
+  ![The My Notes tab, the Note Editor, with the Course, Chapter and Topic selectors and the Read button numbered 1 to 4, a formatting toolbar, and placeholder text reading "Notes will be there"](../assets/images/course-home/course-home-17-my-notes-editor.png){ loading=lazy }
+  <figcaption>The My Notes tab, the Note Editor, ready for a new note.</figcaption>
+</figure>
+
+This is the same Note Editor as the **My Notes** tool under [EduWeAi on your dashboard](../getting-started/dashboard.md#my-notes); it opens here too so you can save a note without leaving the course you are in.
 
 ## AI Assistance
 

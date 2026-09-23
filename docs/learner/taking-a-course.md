@@ -170,22 +170,34 @@ Submit the correct answers in a Test MCQs set, and your result feeds the **MCQ**
 
 ### Labs
 
-<!-- TODO: walkthrough pending. -->
+Labs are only available in Academic courses. Select the **Labs** tab (1), then pick a **Chapter** in the sidebar (2). A topic can have more than one lab, so pick the one you want with its **Lab 1**, **Lab 2**, **Lab 3**, and so on buttons (3). Each lab is an experiment, with its questions and their solutions, to help you understand the chapter through practical, hands-on learning.
+
+<figure markdown>
+  ![The Labs tab, open on chapter 1 Introduction to Cloud Computing, with Lab 1 and Lab 2 buttons above Experiment No. 1, its name, lab ID, tools/language used and prerequisites](../assets/images/course-home/course-home-15-labs-tab.png){ loading=lazy }
+  <figcaption>The Labs tab, open on Lab 1 of a chapter with more than one lab.</figcaption>
+</figure>
+
+!!! note "Labs Are Academic Only"
+    Labs are only available in Academic courses, not in Applied courses.
 
 ### Projects
 
-<!-- TODO: walkthrough pending. Likely where the capstone project (below) appears. -->
+Select the **Projects** tab (1). This is where a course's guided, portfolio-ready capstone project lives: a real-world project, written by the instructor, that almost every course has.
+
+The sidebar (2) lists the project's overview and its parts — for example, a project called "Modernizing Admant Inc.'s Training Platform with Microsoft Azure" broken into parts like "Initial Infrastructure Setup", "Scaling and Load Balancing" and "Global Expansion with a Content Delivery Network (CDN)". Each part has its own video; scroll down below the video for that part's project notes.
+
+<figure markdown>
+  ![The Projects tab, playing the overview video for the project "Modernizing Admant Inc.'s Training Platform with Microsoft Azure", with its parts listed below it in the sidebar and a "scroll down for project notes" hint under the player](../assets/images/course-home/course-home-16-projects-tab.png){ loading=lazy }
+  <figcaption>The Projects tab, playing a project's overview video.</figcaption>
+</figure>
+
+Working through the project is implementation-based learning: instead of just reading or watching, you build the project yourself, which strengthens the skills the course teaches.
+
+<!-- TODO: confirm whether the project is graded, and whether it counts toward the certificate the same way TYS and MCQs do. -->
 
 ### My Notes
 
 <!-- TODO: walkthrough pending. Confirm how this relates to the My Notes tool under EduWeAi on the dashboard. -->
-
-## Capstone Project
-
-Courses are mapped to a guided, portfolio-ready capstone project.
-
-<!-- Source: eduwe.io FAQ "What is the capstone project?" -->
-<!-- TODO: confirm where the capstone appears in a course (likely the Projects tab) and whether it is graded. -->
 
 ## AI Assistance
 

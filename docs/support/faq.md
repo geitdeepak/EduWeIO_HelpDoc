@@ -41,7 +41,7 @@ No. Courses run in your browser, with online compilers where they apply. A moder
 
 ## What Is The Capstone Project?
 
-A guided, portfolio-ready project that maps course concepts to a practical build.
+A guided, portfolio-ready project that maps course concepts to a practical build. It lives on the course's **Projects** tab. See [Taking a course: Projects](../learner/taking-a-course.md#projects).
 
 ## How Do Academic And Applied Courses Differ?
 

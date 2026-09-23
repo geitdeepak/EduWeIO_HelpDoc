@@ -83,13 +83,21 @@ EduWe suggests working through a topic's content in this order:
       <span class="eduwe-journey__when">Practical Clarity</span>
     </span>
   </li>
+  <li>
+    <span class="eduwe-journey__marker"></span>
+    <span class="eduwe-journey__body">
+      <span class="eduwe-journey__title">Projects</span>
+      <span class="eduwe-journey__when">Capstone</span>
+    </span>
+  </li>
 </ol>
 
 <figure markdown>
   ![A Recommended Learning Journey card listing, in order: Video (Start), TYS (After Video), Notes (Available), Course MCQs (After TYS), SEQ / CBSQ (For exam writing), and Labs (For practical clarity)](../assets/images/course-home/course-home-18-recommended-learning-journey.png){ loading=lazy }
-  <figcaption>The Recommended Learning Journey card, as it appears in the app.</figcaption>
+  <figcaption>The Recommended Learning Journey card, as it appears in the app. Projects (the capstone) is missing from this screenshot but belongs at the end of the flow.</figcaption>
 </figure>
 
+<!-- Source: product owner (Projects/the capstone belongs at the end of this journey, after Labs, even though it is cut off in the screenshot below). -->
 <!-- TODO: confirm exactly where this card appears (for example on the Videos tab, alongside Continue Learning and Certification Path). -->
 
 ### Videos

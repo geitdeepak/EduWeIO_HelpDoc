@@ -36,6 +36,26 @@ The course home page is what opens. It has two fixed parts and a main area that 
 
 Each tab shows a different kind of content for the chapter, topic and subtopic you pick in the sidebar.
 
+### Recommended Learning Journey
+
+EduWe suggests working through a topic's content in this order:
+
+| Order | Content | When |
+|---|---|---|
+| 1 | Video | Start here |
+| 2 | TYS | After the video |
+| 3 | Notes | Available any time |
+| 4 | Course MCQs | After TYS |
+| 5 | SEQ / CBSQ | For exam writing |
+| 6 | Labs | For practical clarity |
+
+<figure markdown>
+  ![A Recommended Learning Journey card listing, in order: Video (Start), TYS (After Video), Notes (Available), Course MCQs (After TYS), SEQ / CBSQ (For exam writing), and Labs (For practical clarity)](../assets/images/course-home/course-home-18-recommended-learning-journey.png){ loading=lazy }
+  <figcaption>The Recommended Learning Journey card.</figcaption>
+</figure>
+
+<!-- TODO: confirm exactly where this card appears (for example on the Videos tab, alongside Continue Learning and Certification Path). -->
+
 ### Videos
 
 All of a course's videos are here. Select the **Videos** tab (1), then pick a **Chapter** (2) and its **Topic** (3) in the sidebar to open the video player and press play (4).

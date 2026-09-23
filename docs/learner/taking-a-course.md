@@ -113,6 +113,12 @@ Below the player, three buttons let you switch views without leaving the topic:
 
 - The **blue book icon** opens that topic's notes right there, so you do not need to switch to the separate **Notes** tab to read them.
 - The **yellow robot icon** opens EduWeAi in a panel beside the video, scoped to whatever topic is currently open:
+
+    <figure markdown>
+      ![The three buttons below the video player, with the yellow robot icon in the middle outlined in red](../assets/images/course-home/course-home-19-yellow-robot-icon.png){ loading=lazy }
+      <figcaption>The yellow robot icon, below the video player.</figcaption>
+    </figure>
+
     - **Tutor** explains the topic out loud. Pick the language (Hindi or English) and a voice.
     - **Chat** lets you chat with EduWeAi about the current topic.
     - **Notes** lets you ask EduWeAi about the notes, and view a summary of the paused video frame.

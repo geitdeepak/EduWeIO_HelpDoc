@@ -65,6 +65,23 @@ Each course shows:
 <!-- TODO: add a cart screenshot with an On Demand course, and document how the recharge system appears at checkout for On Demand. -->
 <!-- TODO: the Sort by options (the screenshot shows Name). -->
 
+## Gift A Course
+
+Below the Cart Summary, a **Gift the Course** panel lets you buy a course for someone else instead of yourself:
+
+- **Generate Coupon** creates a gift coupon for the course in your cart. Selecting it takes you to the payment page, so you pay for the course to generate the coupon.
+- **Use Gift Coupon.** If someone has gifted you a course, enter the code they gave you in **Enter Coupon Code** here and select **Apply**.
+
+<figure markdown>
+  ![The Cart Summary with a Gift the Course panel below it, outlined in red. The panel has a Generate Coupon button, marked "Coupon Generation for Gifting", and below it a Use Gift Coupon section with a coupon code field and an Apply button](../assets/images/cart/cart-06-gift-the-course.png){ loading=lazy }
+  <figcaption>The Gift the Course panel. Generate Coupon pays for the course and creates a coupon to give away.</figcaption>
+</figure>
+
+<!-- Source: product owner (Generate Coupon redirects to the payment page) and the cart-06-gift-the-course.png screenshot. -->
+<!-- TODO: confirm what happens after payment: where the generated coupon code is shown, and whether it is also emailed or otherwise sent to share with the recipient. -->
+<!-- TODO: confirm whether gifting is tied to a specific recipient (an email or username entered somewhere), or whether the coupon can be redeemed by whoever has the code. -->
+<!-- TODO: confirm whether a gift coupon covers the whole cart or one course, whether it expires, and what a redeemed coupon does to its price in the recipient's cart. -->
+
 ## Pay With Razorpay
 
 After you select **Check Out** and log in, select **Pay with Razorpay**.

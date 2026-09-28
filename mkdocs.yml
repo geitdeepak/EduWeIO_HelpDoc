@@ -74,6 +74,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Journey Map: journey-map.md
   - Getting Started:
       - Create An Account: getting-started/create-account.md
       - Log In: getting-started/log-in.md
